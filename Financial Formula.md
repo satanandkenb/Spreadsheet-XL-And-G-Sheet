@@ -1,8 +1,4 @@
-# Excel Functions Reference
-
----
-
-## Financial Formula
+# Financial Formula
 
 ---
 
