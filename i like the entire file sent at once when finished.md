@@ -48,7 +48,7 @@ Returns the accrued interest for a security that pays interest at maturity.
 **Example:**  
 =ACCRINTM("01-01-2020", "01-01-2022", 0.08, 1000)
 
-text
+
 Returns: Accrued interest at maturity.
 
 ---
@@ -73,7 +73,7 @@ Returns the linear depreciation for each accounting period for an asset.
 **Example:**  
 =AMORLINC(10000, "01-01-2020", "12-31-2020", 1000, 1, 0.2)
 
-text
+
 Returns: Linear depreciation for year 1.
 
 ---
@@ -95,7 +95,7 @@ Returns the number of days from the beginning of the coupon period to the settle
 **Example:**  
 =COUPDAYSBS("01-04-2020", "01-01-2025", 2)
 
-text
+
 Returns: Days from start of coupon to settlement.
 
 ---
@@ -117,7 +117,7 @@ Returns the number of days in the coupon period that contains the settlement dat
 **Example:**  
 =COUPDAYS("01-04-2020", "01-01-2025", 2)
 
-text
+
 Returns: Coupon period days.
 
 ---
@@ -139,7 +139,7 @@ Returns the number of days from the settlement date to the next coupon date.
 **Example:**  
 =COUPDAYSNC("01-04-2020", "01-01-2025", 2)
 
-text
+
 Returns: Days to next coupon.
 
 ---
@@ -161,7 +161,7 @@ Returns the next coupon date after the settlement date.
 **Example:**  
 =COUPNCD("01-04-2020", "01-01-2025", 2)
 
-text
+
 Returns: Next coupon date.
 
 ---
@@ -183,7 +183,7 @@ Returns the number of coupons payable between the settlement date and maturity d
 **Example:**  
 =COUPNUM("01-04-2020", "01-01-2025", 2)
 
-text
+
 Returns: Number of coupons remaining.
 
 ---
@@ -205,7 +205,7 @@ Returns the previous coupon date before the settlement date.
 **Example:**  
 =COUPPCD("01-04-2020", "01-01-2025", 2)
 
-text
+
 Returns: Previous coupon date before settlement.
 
 ---
@@ -229,7 +229,7 @@ Returns the cumulative interest paid between two periods.
 **Example:**  
 =CUMIPMT(0.05/12, 36, 10000, 1, 12, 0)
 
-text
+
 Returns: Total interest paid in year 1.
 
 ---
@@ -253,7 +253,7 @@ Returns the cumulative principal paid between two periods.
 **Example:**  
 =CUMPRINC(0.05/12, 36, 10000, 1, 12, 0)
 
-text
+
 Returns: Principal paid in year 1.
 
 ---
@@ -276,7 +276,7 @@ Returns depreciation of an asset for period using fixed-declining balance method
 **Example:**  
 =DB(10000, 1000, 5, 1)
 
-text
+
 Returns: Depreciation for period 1.
 
 ---
@@ -299,7 +299,7 @@ Returns double-declining balance depreciation for a period.
 **Example:**  
 =DDB(10000, 1000, 5, 1)
 
-text
+
 Returns: Depreciation using DDB.
 
 ---
@@ -322,7 +322,7 @@ Returns the discount rate for a security.
 **Example:**  
 =DISC("01-04-2020", "01-01-2025", 95, 100)
 
-text
+
 Returns: Discount rate.
 
 ---
@@ -342,7 +342,7 @@ Converts a dollar price in fractional format to decimal format.
 **Example:**  
 =DOLLARDE(1.02, 16)
 
-text
+
 Returns: $1.125
 
 ---
@@ -362,7 +362,7 @@ Converts a dollar price in decimal format to fractional format.
 **Example:**  
 =DOLLARFR(1.125, 16)
 
-text
+
 Returns: $1.02
 
 ---
@@ -386,7 +386,7 @@ Returns annual duration of a security with periodic interest payments.
 **Example:**  
 =DURATION("01-04-2020", "01-01-2025", 0.08, 0.09, 2)
 
-text
+
 Returns: Duration.
 
 ---
@@ -406,7 +406,7 @@ Returns effective annual interest rate.
 **Example:**  
 =EFFECT(0.07, 4)
 
-text
+
 Returns: Effective annual rate.
 
 ---
@@ -429,7 +429,7 @@ Returns future value of investment based on periodic payments and constant rate.
 **Example:**  
 =FV(0.005, 60, -250, 0, 0)
 
-text
+
 Returns: Future value.
 
 ---
@@ -449,7 +449,7 @@ Returns future value of initial principal after applying series of interest rate
 **Example:**  
 =FVSCHEDULE(1000, {0.05,0.08,0.09})
 
-text
+
 Returns: FV after 3 years.
 
 ---
@@ -472,7 +472,7 @@ Returns interest rate for fully invested security.
 **Example:**  
 =INTRATE("01-04-2020", "01-01-2025", 95000, 100000)
 
-text
+
 Returns: Interest rate.
 
 ---
@@ -496,7 +496,7 @@ Returns interest payment for specified period of an investment.
 **Example:**  
 =IPMT(0.05/12, 5, 60, 10000)
 
-text
+
 Returns: Interest payment in 5th month.
 
 ---
@@ -516,7 +516,7 @@ Returns internal rate of return for series of cash flows.
 **Example:**  
 =IRR({-10000, 2500, 2500, 2500, 2500, 2500})
 
-text
+
 Returns: IRR.
 
 ---
@@ -538,7 +538,7 @@ Returns interest paid during specific period of investment.
 **Example:**  
 =ISPMT(0.05/12, 5, 60, 10000)
 
-text
+
 Returns: Interest paid in 5th month.
 
 ---
@@ -562,7 +562,7 @@ Returns modified Macaulay duration for security.
 **Example:**  
 =MDURATION("01-04-2020", "01-01-2025", 0.08, 0.09, 2)
 
-text
+
 Returns: Modified duration.
 
 ---
@@ -583,7 +583,7 @@ Returns modified internal rate of return.
 **Example:**  
 =MIRR({-10000,2500,2500,2500,2500,2500},0.1,0.12)
 
-text
+
 Returns: MIRR.
 
 ---
@@ -603,7 +603,7 @@ Returns annual nominal interest rate.
 **Example:**  
 =NOMINAL(0.12, 4)
 
-text
+
 Returns: Nominal rate.
 
 ---
@@ -626,7 +626,7 @@ Returns number of periods for investment.
 **Example:**  
 =NPER(0.005, -250, 10000)
 
-text
+
 Returns: Number of periods.
 
 ---
@@ -646,7 +646,7 @@ Returns net present value based on cash flows and discount rate.
 **Example:**  
 =NPV(0.1, -10000, 2500, 2500, 2500, 2500, 2500)
 
-text
+
 Returns: Net present value.
 
 ---
@@ -673,7 +673,7 @@ Returns price per $100 face value of security with odd first period.
 **Example:**  
 =ODDFPRICE("01-04-2020", "01-01-2025", "01-01-2020", "01-07-2020", 0.08, 0.09, 100, 2)
 
-text
+
 Returns: Price.
 
 ---
@@ -700,7 +700,7 @@ Returns yield of a security with odd first period.
 **Example:**  
 =ODDFYIELD("01-04-2020", "01-01-2025", "01-01-2020", "01-07-2020", 0.08, 95, 100, 2)
 
-text
+
 Returns: Yield.
 
 ---
@@ -726,7 +726,7 @@ Returns price per $100 face value of a security with odd last period.
 **Example:**  
 =ODDLPRICE("01-04-2020", "01-01-2025", "01-07-2021", 0.08, 0.09, 100, 2)
 
-text
+
 Returns: Price.
 
 ---
@@ -752,7 +752,7 @@ Returns yield of a security with odd last period.
 **Example:**  
 =ODDLYIELD("01-04-2020", "01-01-2025", "01-07-2021", 0.08, 95, 100, 2)
 
-text
+
 Returns: Yield.
 
 ---
@@ -773,7 +773,7 @@ Returns number of periods required for investment to reach specified value.
 **Example:**  
 =PDURATION(0.05, 10000, 20000)
 
-text
+
 Returns: Periods to double investment.
 
 ---
@@ -796,7 +796,7 @@ Returns periodic payment for an annuity.
 **Example:**  
 =PMT(0.05/12, 60, 10000)
 
-text
+
 Returns: Monthly payment.
 
 ---
@@ -820,7 +820,7 @@ Returns payment on the principal for a given period.
 **Example:**  
 =PPMT(0.05/12, 5, 60, 10000)
 
-text
+
 Returns: Principal in period 5.
 
 ---
@@ -845,7 +845,7 @@ Returns price per $100 face value of a bond.
 **Example:**  
 =PRICE("01-04-2020", "01-01-2025", 0.08, 0.09, 100, 2)
 
-text
+
 Returns: Bond price.
 
 ---
@@ -868,7 +868,7 @@ Returns price per $100 face value of a discounted security.
 **Example:**  
 =PRICEDISC("01-04-2020", "01-01-2025", 0.05, 100)
 
-text
+
 Returns: Discounted security price.
 
 ---
@@ -893,7 +893,7 @@ Returns price per $100 face value of a security that pays interest at maturity.
 **Example:**  
 =PRICEMAT("01-04-2020", "01-01-2025", "01-01-2020", 0.08, 0.09, 100)
 
-text
+
 Returns: Price for security at maturity.
 
 ---
@@ -916,7 +916,7 @@ Returns present value of an investment.
 **Example:**  
 =PV(0.005, 60, -250, 0, 0)
 
-text
+
 Returns: Present value.
 
 ---
@@ -940,7 +940,7 @@ Returns interest rate per period of an annuity.
 **Example:**  
 =RATE(60, -250, 10000)
 
-text
+
 Returns: Periodic interest rate.
 
 ---
@@ -963,7 +963,7 @@ Returns amount received at maturity for fully invested security.
 **Example:**  
 =RECEIVED("01-04-2020", "01-01-2025", 95000, 0.05)
 
-text
+
 Returns: Amount at maturity.
 
 ---
@@ -984,7 +984,7 @@ Returns equivalent interest rate for growth of investment.
 **Example:**  
 =RRI(6, 10000, 20000)
 
-text
+
 Returns: Equivalent rate per period.
 
 ---
@@ -1005,7 +1005,7 @@ Returns straight-line depreciation for one period.
 **Example:**  
 =SLN(10000, 1000, 5)
 
-text
+
 Returns: Depreciation per period.
 
 ---
@@ -1027,7 +1027,7 @@ Returns historical data for securities.
 **Example:**  
 =STOCKHISTORY("MSFT", "01-01-2020", "12-31-2020")
 
-text
+
 Returns: MSFT history for 2020.
 
 ---
@@ -1049,7 +1049,7 @@ Returns sum-of-years' digits depreciation for specified period.
 **Example:**  
 =SYD(10000, 1000, 5, 1)
 
-text
+
 Returns: SYD depreciation for year 1.
 
 ---
@@ -1070,7 +1070,7 @@ Returns bond-equivalent yield for a Treasury bill.
 **Example:**  
 =TBILLEQ("01-04-2020", "01-01-2025", 95)
 
-text
+
 Returns: Bond-equivalent yield.
 
 ---
@@ -1091,7 +1091,7 @@ Returns price per $100 face value for a Treasury bill.
 **Example:**  
 =TBILLPRICE("01-04-2020", "01-01-2025", 0.05)
 
-text
+
 Returns: Treasury bill price.
 
 ---
@@ -1112,7 +1112,7 @@ Returns yield for a Treasury bill.
 **Example:**  
 =TBILLYIELD("01-04-2020", "01-01-2025", 95)
 
-text
+
 Returns: Treasury bill yield.
 
 ---
@@ -1137,7 +1137,7 @@ Returns depreciation for asset for specified/partial period using variable decli
 **Example:**  
 =VDB(10000, 1000, 5, 1, 2)
 
-text
+
 Returns: Depreciation between periods 1 and 2.
 
 ---
@@ -1158,7 +1158,7 @@ Returns internal rate of return for a schedule of cash flows not necessarily per
 **Example:**  
 =XIRR({-10000,2500,2500,2500,2500,2500},{"01-01-2020","01-01-2021","01-01-2022","01-01-2023","01-01-2024","01-01-2025"})
 
-text
+
 Returns: IRR.
 
 ---
@@ -1179,7 +1179,7 @@ Returns net present value for a schedule of cash flows not necessarily periodic.
 **Example:**  
 =XNPV(0.1, {-10000,2500,2500,2500,2500,2500}, {"01-01-2020","01-01-2021","01-01-2022","01-01-2023","01-01-2024","01-01-2025"})
 
-text
+
 Returns: Net present value.
 
 ---
@@ -1204,7 +1204,7 @@ Returns yield on a security that pays periodic interest.
 **Example:**  
 =YIELD("01-04-2020", "01-01-2025", 0.08, 95, 100, 2)
 
-text
+
 Returns: Security yield.
 
 ---
@@ -1227,7 +1227,7 @@ Returns annual yield for discounted security (e.g., Treasury bill).
 **Example:**  
 =YIELDDISC("01-04-2020", "01-01-2025", 95, 100)
 
-text
+
 Returns: Discounted security yield.
 
 ---
@@ -1251,3 +1251,7 @@ Returns annual yield of security paying interest at maturity.
 
 **Example:**  
 =YIELDMAT("01-04-2020", "01-01-2025", "01-01-2020", 0.08, 95, 100)
+
+Returns: Yield at maturity.
+
+---
