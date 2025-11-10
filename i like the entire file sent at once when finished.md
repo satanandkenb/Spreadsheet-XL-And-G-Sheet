@@ -1,17 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# i like the entire file sent at once when finished
-
-I will now generate the complete Markdown file for all listed **Financial Formula** functions, with each entry including:
-
-- Description
-- Syntax
-- Parameters explained
-- Example
-
-***
-
-```markdown
 # Excel Functions Reference
 
 ---
@@ -38,11 +24,8 @@ Calculates the accrued interest for a security that pays periodic interest.
 - `basis` (optional): Day count basis (0=US 30/360, 1=Actual/Actual, 2=Actual/360, 3=Actual/365, 4=European 30/360).
 
 **Example:**  
-```
-
 =ACCRINT("01-01-2020","01-07-2020","01-04-2020",0.08,1000,2)
 
-```
 Returns: Accrued Interest Value
 
 ---
@@ -63,11 +46,9 @@ Returns the accrued interest for a security that pays interest at maturity.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =ACCRINTM("01-01-2020", "01-01-2022", 0.08, 1000)
 
-```
+text
 Returns: Accrued interest at maturity.
 
 ---
@@ -90,11 +71,9 @@ Returns the linear depreciation for each accounting period for an asset.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =AMORLINC(10000, "01-01-2020", "12-31-2020", 1000, 1, 0.2)
 
-```
+text
 Returns: Linear depreciation for year 1.
 
 ---
@@ -114,11 +93,9 @@ Returns the number of days from the beginning of the coupon period to the settle
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =COUPDAYSBS("01-04-2020", "01-01-2025", 2)
 
-```
+text
 Returns: Days from start of coupon to settlement.
 
 ---
@@ -138,11 +115,9 @@ Returns the number of days in the coupon period that contains the settlement dat
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =COUPDAYS("01-04-2020", "01-01-2025", 2)
 
-```
+text
 Returns: Coupon period days.
 
 ---
@@ -162,11 +137,9 @@ Returns the number of days from the settlement date to the next coupon date.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =COUPDAYSNC("01-04-2020", "01-01-2025", 2)
 
-```
+text
 Returns: Days to next coupon.
 
 ---
@@ -186,11 +159,9 @@ Returns the next coupon date after the settlement date.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =COUPNCD("01-04-2020", "01-01-2025", 2)
 
-```
+text
 Returns: Next coupon date.
 
 ---
@@ -210,11 +181,9 @@ Returns the number of coupons payable between the settlement date and maturity d
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =COUPNUM("01-04-2020", "01-01-2025", 2)
 
-```
+text
 Returns: Number of coupons remaining.
 
 ---
@@ -234,11 +203,9 @@ Returns the previous coupon date before the settlement date.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =COUPPCD("01-04-2020", "01-01-2025", 2)
 
-```
+text
 Returns: Previous coupon date before settlement.
 
 ---
@@ -260,11 +227,9 @@ Returns the cumulative interest paid between two periods.
 - `type`: 0 for payments at end, 1 at beginning.
 
 **Example:**  
-```
-
 =CUMIPMT(0.05/12, 36, 10000, 1, 12, 0)
 
-```
+text
 Returns: Total interest paid in year 1.
 
 ---
@@ -286,11 +251,9 @@ Returns the cumulative principal paid between two periods.
 - `type`: 0 for payments at end, 1 at beginning.
 
 **Example:**  
-```
-
 =CUMPRINC(0.05/12, 36, 10000, 1, 12, 0)
 
-```
+text
 Returns: Principal paid in year 1.
 
 ---
@@ -311,11 +274,9 @@ Returns depreciation of an asset for period using fixed-declining balance method
 - `month` (optional): Number of months in the first year.
 
 **Example:**  
-```
-
 =DB(10000, 1000, 5, 1)
 
-```
+text
 Returns: Depreciation for period 1.
 
 ---
@@ -336,11 +297,9 @@ Returns double-declining balance depreciation for a period.
 - `factor` (optional): Rate at which balance declines (default 2).
 
 **Example:**  
-```
-
 =DDB(10000, 1000, 5, 1)
 
-```
+text
 Returns: Depreciation using DDB.
 
 ---
@@ -361,11 +320,9 @@ Returns the discount rate for a security.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =DISC("01-04-2020", "01-01-2025", 95, 100)
 
-```
+text
 Returns: Discount rate.
 
 ---
@@ -383,11 +340,9 @@ Converts a dollar price in fractional format to decimal format.
 - `fraction`: Denominator in the fraction.
 
 **Example:**  
-```
-
 =DOLLARDE(1.02, 16)
 
-```
+text
 Returns: $1.125
 
 ---
@@ -405,11 +360,9 @@ Converts a dollar price in decimal format to fractional format.
 - `fraction`: Denominator for fraction.
 
 **Example:**  
-```
-
 =DOLLARFR(1.125, 16)
 
-```
+text
 Returns: $1.02
 
 ---
@@ -431,11 +384,9 @@ Returns annual duration of a security with periodic interest payments.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =DURATION("01-04-2020", "01-01-2025", 0.08, 0.09, 2)
 
-```
+text
 Returns: Duration.
 
 ---
@@ -453,11 +404,9 @@ Returns effective annual interest rate.
 - `npery`: Number of compounding periods/year.
 
 **Example:**  
-```
-
 =EFFECT(0.07, 4)
 
-```
+text
 Returns: Effective annual rate.
 
 ---
@@ -478,11 +427,9 @@ Returns future value of investment based on periodic payments and constant rate.
 - `type` (optional): 0=end, 1=beginning.
 
 **Example:**  
-```
-
 =FV(0.005, 60, -250, 0, 0)
 
-```
+text
 Returns: Future value.
 
 ---
@@ -500,11 +447,9 @@ Returns future value of initial principal after applying series of interest rate
 - `schedule`: Range of interest rates.
 
 **Example:**  
-```
-
 =FVSCHEDULE(1000, {0.05,0.08,0.09})
 
-```
+text
 Returns: FV after 3 years.
 
 ---
@@ -525,11 +470,9 @@ Returns interest rate for fully invested security.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =INTRATE("01-04-2020", "01-01-2025", 95000, 100000)
 
-```
+text
 Returns: Interest rate.
 
 ---
@@ -551,11 +494,9 @@ Returns interest payment for specified period of an investment.
 - `type` (optional): 0=end, 1=beginning.
 
 **Example:**  
-```
-
 =IPMT(0.05/12, 5, 60, 10000)
 
-```
+text
 Returns: Interest payment in 5th month.
 
 ---
@@ -573,11 +514,9 @@ Returns internal rate of return for series of cash flows.
 - `guess` (optional): Initial guess.
 
 **Example:**  
-```
-
 =IRR({-10000, 2500, 2500, 2500, 2500, 2500})
 
-```
+text
 Returns: IRR.
 
 ---
@@ -597,11 +536,9 @@ Returns interest paid during specific period of investment.
 - `pv`: Present value.
 
 **Example:**  
-```
-
 =ISPMT(0.05/12, 5, 60, 10000)
 
-```
+text
 Returns: Interest paid in 5th month.
 
 ---
@@ -623,11 +560,9 @@ Returns modified Macaulay duration for security.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =MDURATION("01-04-2020", "01-01-2025", 0.08, 0.09, 2)
 
-```
+text
 Returns: Modified duration.
 
 ---
@@ -646,11 +581,9 @@ Returns modified internal rate of return.
 - `reinvest_rate`: Interest rate received on reinvestments.
 
 **Example:**  
-```
-
 =MIRR({-10000,2500,2500,2500,2500,2500},0.1,0.12)
 
-```
+text
 Returns: MIRR.
 
 ---
@@ -668,11 +601,9 @@ Returns annual nominal interest rate.
 - `npery`: Compounding periods/year.
 
 **Example:**  
-```
-
 =NOMINAL(0.12, 4)
 
-```
+text
 Returns: Nominal rate.
 
 ---
@@ -693,11 +624,9 @@ Returns number of periods for investment.
 - `type` (optional): 0=end, 1=beginning.
 
 **Example:**  
-```
-
 =NPER(0.005, -250, 10000)
 
-```
+text
 Returns: Number of periods.
 
 ---
@@ -715,11 +644,9 @@ Returns net present value based on cash flows and discount rate.
 - `value1, value2, ...`: Cash flows.
 
 **Example:**  
-```
-
 =NPV(0.1, -10000, 2500, 2500, 2500, 2500, 2500)
 
-```
+text
 Returns: Net present value.
 
 ---
@@ -744,11 +671,9 @@ Returns price per $100 face value of security with odd first period.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =ODDFPRICE("01-04-2020", "01-01-2025", "01-01-2020", "01-07-2020", 0.08, 0.09, 100, 2)
 
-```
+text
 Returns: Price.
 
 ---
@@ -773,11 +698,9 @@ Returns yield of a security with odd first period.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =ODDFYIELD("01-04-2020", "01-01-2025", "01-01-2020", "01-07-2020", 0.08, 95, 100, 2)
 
-```
+text
 Returns: Yield.
 
 ---
@@ -801,11 +724,9 @@ Returns price per $100 face value of a security with odd last period.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =ODDLPRICE("01-04-2020", "01-01-2025", "01-07-2021", 0.08, 0.09, 100, 2)
 
-```
+text
 Returns: Price.
 
 ---
@@ -829,11 +750,9 @@ Returns yield of a security with odd last period.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =ODDLYIELD("01-04-2020", "01-01-2025", "01-07-2021", 0.08, 95, 100, 2)
 
-```
+text
 Returns: Yield.
 
 ---
@@ -852,11 +771,9 @@ Returns number of periods required for investment to reach specified value.
 - `fv`: Future value.
 
 **Example:**  
-```
-
 =PDURATION(0.05, 10000, 20000)
 
-```
+text
 Returns: Periods to double investment.
 
 ---
@@ -877,11 +794,9 @@ Returns periodic payment for an annuity.
 - `type` (optional): 0=end, 1=beginning.
 
 **Example:**  
-```
-
 =PMT(0.05/12, 60, 10000)
 
-```
+text
 Returns: Monthly payment.
 
 ---
@@ -903,11 +818,9 @@ Returns payment on the principal for a given period.
 - `type` (optional): 0=end, 1=beginning.
 
 **Example:**  
-```
-
 =PPMT(0.05/12, 5, 60, 10000)
 
-```
+text
 Returns: Principal in period 5.
 
 ---
@@ -930,11 +843,9 @@ Returns price per $100 face value of a bond.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =PRICE("01-04-2020", "01-01-2025", 0.08, 0.09, 100, 2)
 
-```
+text
 Returns: Bond price.
 
 ---
@@ -955,11 +866,9 @@ Returns price per $100 face value of a discounted security.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =PRICEDISC("01-04-2020", "01-01-2025", 0.05, 100)
 
-```
+text
 Returns: Discounted security price.
 
 ---
@@ -982,11 +891,9 @@ Returns price per $100 face value of a security that pays interest at maturity.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =PRICEMAT("01-04-2020", "01-01-2025", "01-01-2020", 0.08, 0.09, 100)
 
-```
+text
 Returns: Price for security at maturity.
 
 ---
@@ -1007,11 +914,9 @@ Returns present value of an investment.
 - `type` (optional): 0=end, 1=beginning.
 
 **Example:**  
-```
-
 =PV(0.005, 60, -250, 0, 0)
 
-```
+text
 Returns: Present value.
 
 ---
@@ -1033,11 +938,9 @@ Returns interest rate per period of an annuity.
 - `guess` (optional): Initial guess.
 
 **Example:**  
-```
-
 =RATE(60, -250, 10000)
 
-```
+text
 Returns: Periodic interest rate.
 
 ---
@@ -1058,11 +961,9 @@ Returns amount received at maturity for fully invested security.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =RECEIVED("01-04-2020", "01-01-2025", 95000, 0.05)
 
-```
+text
 Returns: Amount at maturity.
 
 ---
@@ -1081,11 +982,9 @@ Returns equivalent interest rate for growth of investment.
 - `fv`: Future value.
 
 **Example:**  
-```
-
 =RRI(6, 10000, 20000)
 
-```
+text
 Returns: Equivalent rate per period.
 
 ---
@@ -1104,11 +1003,9 @@ Returns straight-line depreciation for one period.
 - `life`: Useful life.
 
 **Example:**  
-```
-
 =SLN(10000, 1000, 5)
 
-```
+text
 Returns: Depreciation per period.
 
 ---
@@ -1128,11 +1025,9 @@ Returns historical data for securities.
 - `interval` (optional): Data frequency (daily, weekly, monthly).
 
 **Example:**  
-```
-
 =STOCKHISTORY("MSFT", "01-01-2020", "12-31-2020")
 
-```
+text
 Returns: MSFT history for 2020.
 
 ---
@@ -1152,11 +1047,9 @@ Returns sum-of-years' digits depreciation for specified period.
 - `period`: Period to calculate.
 
 **Example:**  
-```
-
 =SYD(10000, 1000, 5, 1)
 
-```
+text
 Returns: SYD depreciation for year 1.
 
 ---
@@ -1175,11 +1068,9 @@ Returns bond-equivalent yield for a Treasury bill.
 - `pr`: Price per $100 face value.
 
 **Example:**  
-```
-
 =TBILLEQ("01-04-2020", "01-01-2025", 95)
 
-```
+text
 Returns: Bond-equivalent yield.
 
 ---
@@ -1198,11 +1089,9 @@ Returns price per $100 face value for a Treasury bill.
 - `discount`: Discount rate.
 
 **Example:**  
-```
-
 =TBILLPRICE("01-04-2020", "01-01-2025", 0.05)
 
-```
+text
 Returns: Treasury bill price.
 
 ---
@@ -1221,11 +1110,9 @@ Returns yield for a Treasury bill.
 - `pr`: Price per $100 face value.
 
 **Example:**  
-```
-
 =TBILLYIELD("01-04-2020", "01-01-2025", 95)
 
-```
+text
 Returns: Treasury bill yield.
 
 ---
@@ -1248,11 +1135,9 @@ Returns depreciation for asset for specified/partial period using variable decli
 - `no_switch` (optional): TRUE prevents switch to straight-line, FALSE allows.
 
 **Example:**  
-```
-
 =VDB(10000, 1000, 5, 1, 2)
 
-```
+text
 Returns: Depreciation between periods 1 and 2.
 
 ---
@@ -1271,11 +1156,9 @@ Returns internal rate of return for a schedule of cash flows not necessarily per
 - `guess` (optional): Initial guess.
 
 **Example:**  
-```
-
 =XIRR({-10000,2500,2500,2500,2500,2500},{"01-01-2020","01-01-2021","01-01-2022","01-01-2023","01-01-2024","01-01-2025"})
 
-```
+text
 Returns: IRR.
 
 ---
@@ -1294,11 +1177,9 @@ Returns net present value for a schedule of cash flows not necessarily periodic.
 - `dates`: Dates of cash flows.
 
 **Example:**  
-```
-
 =XNPV(0.1, {-10000,2500,2500,2500,2500,2500}, {"01-01-2020","01-01-2021","01-01-2022","01-01-2023","01-01-2024","01-01-2025"})
 
-```
+text
 Returns: Net present value.
 
 ---
@@ -1321,11 +1202,9 @@ Returns yield on a security that pays periodic interest.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =YIELD("01-04-2020", "01-01-2025", 0.08, 95, 100, 2)
 
-```
+text
 Returns: Security yield.
 
 ---
@@ -1346,11 +1225,9 @@ Returns annual yield for discounted security (e.g., Treasury bill).
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =YIELDDISC("01-04-2020", "01-01-2025", 95, 100)
 
-```
+text
 Returns: Discounted security yield.
 
 ---
@@ -1373,52 +1250,4 @@ Returns annual yield of security paying interest at maturity.
 - `basis` (optional): Day count basis.
 
 **Example:**  
-```
-
 =YIELDMAT("01-04-2020", "01-01-2025", "01-01-2020", 0.08, 95, 100)
-
-```
-Returns: Yield at maturity.
-
----
-```
-
-**Copy and use this file for a complete reference to every major Excel Financial Formula. You can add other categories—DATE \& TIME, MATH \& TRIG, etc.—in exactly this format for a unified Excel guide. If you need the file as raw Markdown text for download or editing, let me know!**
-<span style="display:none">[^1][^10][^11][^12][^13][^14][^15][^16][^17][^2][^3][^4][^5][^6][^7][^8][^9]</span>
-
-<div align="center">⁂</div>
-
-[^1]: https://support.microsoft.com/en-us/office/financial-functions-reference-5658d81e-6035-4f24-89c1-fbf124c2b1d8
-
-[^2]: https://www.financialprofessionals.org/training-resources/resources/articles/Details/useful-excel-functions-for-financial-planning-and-analysis
-
-[^3]: https://www.drnishikantjha.com/booksCollection/Financial Analysis with Microsoft Excel ( PDFDrive ).pdf
-
-[^4]: https://courses.lumenlearning.com/wm-computerapplicationsmgrs-2/chapter/financial-functions-and-formulas/
-
-[^5]: https://www.youtube.com/watch?v=XOyWMYQIeIE
-
-[^6]: https://corporatefinanceinstitute.com/resources/excel/excel-for-finance/
-
-[^7]: https://web.acd.ccac.edu/~ndowney/CIT140/Excel/Formulas.pdf
-
-[^8]: https://www.fe.training/free-resources/excel/30-key-excel-functions-for-finance/
-
-[^9]: https://siesce.edu.in/docs/resources/EXCEL Functions_83425.pdf
-
-[^10]: https://support.microsoft.com/en-us/office/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188
-
-[^11]: https://openstax.org/books/workplace-software-skills/pages/12-2-financial-functions-in-microsoft-excel
-
-[^12]: https://support.microsoft.com/en-us/office/excel-functions-by-category-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb
-
-[^13]: https://www.datacamp.com/tutorial/basic-excel-formulas-for-everyone
-
-[^14]: https://www.youtube.com/watch?v=w5cytGoutmg
-
-[^15]: https://www.wallstreetmojo.com/financial-functions-in-excel/
-
-[^16]: https://www.bc.edu/content/dam/files/offices/help-secure/pdf/training/excel-functions.pdf
-
-[^17]: https://www.excel-accountant.com/article/excel-functions-and-formulas-for-finance
-
